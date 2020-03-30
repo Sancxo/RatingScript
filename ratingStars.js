@@ -1,10 +1,10 @@
 class Movie {
-  constructor (title, real, year, ratings, votes) {
+  constructor (title, dir, year) {
     this.title = title;
-    this.real = real;
+    this.dir = dir;
     this.year = year;
-    this.ratings = ratings;
-    this.votes = votes;
+    this.ratings = 0;
+    this.votes = 0;
   }
   rate(numberOfStars) {
     if (numberOfStars > 5 || numberOfStars < 0) {
@@ -21,7 +21,7 @@ class Movie {
   }
 }
 
-const repoMan = new Movie("Repo Man", "Alex Cox", "1984", 0, 0);
+const repoMan = new Movie("Repo Man", "Alex Cox", "1984");
 console.log(repoMan);
 repoMan.rate(4);
 repoMan.rate(5);

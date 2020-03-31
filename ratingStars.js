@@ -21,6 +21,7 @@ class Movie {
   }
 }
 
+//An example :
 const repoMan = new Movie("Repo Man", "Alex Cox", "1984");
 console.log(repoMan);
 repoMan.rate(4);

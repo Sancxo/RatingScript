@@ -1,7 +1,7 @@
 class Movie {
-  constructor (title, dir, year) {
+  constructor (title, director, year) {
     this.title = title;
-    this.dir = dir;
+    this.director = director;
     this.year = year;
     this.sumOfStars = 0;
     this.numberOfVotes = 0;
